@@ -22,7 +22,7 @@ const UseStateArray = () => {
             <button
               type="button"
               onClick={() => {
-                removeItem(id);
+                removeItems(id);
               }}
             >
               remove

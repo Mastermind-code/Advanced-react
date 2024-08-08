@@ -1,10 +1,9 @@
-import ErrorExample from "./components/01-useState/ErrorExample";
-import UseStateArray from "./components/01-useState/UseStateArray";
+import UseStateObject from "./components/01-useState/UseStateObject";
 
 function App() {
   return (
     <div className="container">
-      <UseStateArray />
+      <UseStateObject />
     </div>
   );
 }

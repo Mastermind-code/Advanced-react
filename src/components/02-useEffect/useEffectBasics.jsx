@@ -7,7 +7,7 @@ const UseEffectBasics = () => {
   };
   useEffect(() => {
     console.log("hello from useEffect");
-  });
+  }, []);
 
   sayHello();
 

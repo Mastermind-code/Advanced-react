@@ -3,11 +3,12 @@ import UseStateObject from "./components/01-useState/UseStateObject";
 import FetchData from "./components/02-useEffect/fetchData";
 import UseEffectBasics from "./components/02-useEffect/useEffectBasics";
 import MultipleReturnsBasics from "./components/03-conditional-rendering/multipleReturnsBasics";
+import MultipleReturnsFetchData from "./components/03-conditional-rendering/multipleReturnsFetchData";
 
 function App() {
   return (
     <div className="container">
-      <MultipleReturnsBasics />
+      <MultipleReturnsFetchData />
     </div>
   );
 }

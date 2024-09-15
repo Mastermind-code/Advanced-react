@@ -1,9 +1,9 @@
-import ShortCircuitOverview from "./components/03-conditional-rendering/shortCircuitOverview";
+import ToggleChallenge from "./components/03-conditional-rendering/toggleChallenge";
 
 function App() {
   return (
     <div className="container">
-      <ShortCircuitExamples />
+      <ToggleChallenge />
     </div>
   );
 }

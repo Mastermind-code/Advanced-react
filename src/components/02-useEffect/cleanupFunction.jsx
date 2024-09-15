@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const CleanupFunction = () => {
   const [toggle, setToggle] = useState(false);
@@ -8,15 +8,20 @@ const CleanupFunction = () => {
       <button
         className="btn"
         onClick={() => {
-          setToggle(true);
+          setToggle(!toggle);
         }}
-      ></button>
-      {toggle && <randomComponernt />}
+      >
+        toggle components
+      </button>
+      {toggle && <SomeComponernt />}
     </div>
   );
 };
 
-const randomComponernt = () => {
+const SomeComponernt = () => {
+  useEffect(() => {
+    console.log("SomeComponernt");
+  }, []);
   return <h3>Hello there</h3>;
 };
 export default CleanupFunction;

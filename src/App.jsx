@@ -1,9 +1,9 @@
-import UserChallenge from "./components/03-conditional-rendering/userChallenge";
+import CleanupFunction from "./components/02-useEffect/cleanupFunction";
 
 function App() {
   return (
     <div className="container">
-      <UserChallenge />
+      <CleanupFunction />
     </div>
   );
 }

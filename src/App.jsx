@@ -1,9 +1,9 @@
-import ToggleChallenge from "./components/03-conditional-rendering/toggleChallenge";
+import UserChallenge from "./components/03-conditional-rendering/userChallenge";
 
 function App() {
   return (
     <div className="container">
-      <ToggleChallenge />
+      <UserChallenge />
     </div>
   );
 }

@@ -3,8 +3,11 @@ import { useState } from "react";
 const ControlledInputs = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
   return (
-    <form className="form">
+    <form className="form" onSubmit={handleSubmit}>
       <h4>Controlled inputs</h4>
       <div className="form-row">
         <label htmlFor="name" className="form-label">

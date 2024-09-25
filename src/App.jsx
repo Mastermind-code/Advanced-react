@@ -1,9 +1,8 @@
-import List from "./components/05-leverage-javascript/List";
-
 function App() {
   return (
     <div className="container">
-      <List />
+      <CleanupFunction />
+      <Navbar />
     </div>
   );
 }

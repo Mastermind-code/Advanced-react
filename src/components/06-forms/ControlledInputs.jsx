@@ -1,4 +1,8 @@
+import { useState } from "react";
+
 const ControlledInputs = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
   return (
     <form className="form">
       <h4>Controlled inputs</h4>
@@ -10,7 +14,9 @@ const ControlledInputs = () => {
           type="text"
           id="name"
           value={name}
-          onChange={(e) => {}}
+          onChange={(e) => {
+            setName(e.target.value);
+          }}
           className="form-input"
         />
       </div>
@@ -22,7 +28,9 @@ const ControlledInputs = () => {
           type="text"
           id="email"
           value={email}
-          onChange={(e) => {}}
+          onChange={(e) => {
+            setEmail(e.target.value);
+          }}
           className="form-input"
         />
       </div>

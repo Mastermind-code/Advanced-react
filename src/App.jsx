@@ -1,9 +1,9 @@
-import CleanupFunction from "./components/02-useEffect/cleanupFunction";
+import List from "./components/05-leverage-javascript/List";
 
 function App() {
   return (
     <div className="container">
-      <CleanupFunction />
+      <List />
     </div>
   );
 }

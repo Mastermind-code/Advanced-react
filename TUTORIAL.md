@@ -1420,7 +1420,7 @@ import About from './About';
 export { Home, About };
 ```
 
-in App.jsx
+in App.jsxs
 
 import {Home, About} from 'pathToFolder/Pages
 

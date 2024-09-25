@@ -2,26 +2,30 @@ import { useEffect, useState } from "react";
 
 const CleanupFunction = () => {
   const [toggle, setToggle] = useState(false);
-
   return (
     <div>
-      <button
-        className="btn"
-        onClick={() => {
-          setToggle(!toggle);
-        }}
-      >
-        toggle components
+      <button className="btn" onClick={() => setToggle(!toggle)}>
+        toggle component
       </button>
-      {toggle && <SomeComponernt />}
+      {toggle && <RandomComponent />}
     </div>
   );
 };
-
-const SomeComponernt = () => {
+const RandomComponent = () => {
   useEffect(() => {
-    console.log("SomeComponernt");
+    const intID = setInterval(() => {
+      console.log("hello from interval");
+    }, 1000);
+    console.log("hmm, this is interesting");
+
+    return function cleanup() {
+      clearInterval(intID);
+    };
   }, []);
-  return <h3>Hello there</h3>;
+  return (
+    <>
+      <h1>hello there</h1>
+    </>
+  );
 };
 export default CleanupFunction;

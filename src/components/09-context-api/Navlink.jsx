@@ -4,7 +4,7 @@ import UserContainer from "./UserContainer";
 const Navlink = ({ user, logout }) => {
   return (
     <div className="nav-container">
-      <ul className="navlink">
+      <ul className="nav-links">
         <li>
           <a href="#home">home</a>
         </li>
